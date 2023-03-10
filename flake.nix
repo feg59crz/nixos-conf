@@ -9,10 +9,10 @@
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      acer = nixpkgs.lib.nixosSystem {
+      virt = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./acer/configuration.nix
+          ./virt/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
