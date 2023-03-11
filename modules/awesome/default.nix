@@ -16,7 +16,7 @@ in {
       enable = true;
       windowManager.awesome = {
         enable = true;
-        luaModules = with pkgs.LuaPackages; [
+        luaModules = with pkgs.luaPackages; [
           luarocks
         ];
       };
