@@ -18,6 +18,6 @@ in {
     home.packages = with pkgs; [
         # picom
 	    ];
-    services.picom.enable = tue;
+    # services.picom.enable = true;
   };
 }
