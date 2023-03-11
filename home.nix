@@ -13,7 +13,7 @@
     git.enable = true;
     
     # wm
-    i3.enagle = true
+    i3.enagle = true;
     awesome.enable = false;
     # terminal
     kitty.enable = true;
