@@ -13,5 +13,10 @@ in {
         enable = true;
       };
     };
+
+    home.packages = with pkgs; [
+        picom
+	    ];
+    services.picom.enable = true;
   };
 }

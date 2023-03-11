@@ -2,14 +2,16 @@
 
 {
   imports = [
-    ./packages
+    # alacrity
     ./awesome
     ./git
+    # helix
     ./kitty
-    ./tmux
     ./nano
-    ./vscode
+    # neovim
+    ./packages
     ./python
-
+    ./tmux
+    ./vscode
   ];
 }
