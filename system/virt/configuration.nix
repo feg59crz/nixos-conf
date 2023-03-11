@@ -53,7 +53,7 @@ in
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
-  # services.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = true;
   # services.xserver.windowManager.awesome.enable = true;
   # Configure keymap in X11
   services.xserver = {
