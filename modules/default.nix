@@ -3,6 +3,7 @@
 {
   imports = [
     ./packages
+    ./awesome
     ./git
     ./kitty
     ./tmux
