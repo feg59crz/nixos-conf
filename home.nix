@@ -13,7 +13,7 @@
     git.enable = true;
     
     # wm
-    awesome.enable = false;
+    awesome.enable = true;
     # terminal
     kitty.enable = true;
     tmux.enable = true;

@@ -49,29 +49,12 @@ in
   };
 
   # Enable the X11 windowing system.
-  # services.xserver.enable = true;
+  services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.lightdm.enable = true;
-  # services.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = true;
   # services.xserver.windowManager.awesome.enable = true;
-
-  services.xserver = {
-    enable = true;
-    displayManager = {
-      lightdm.enable = true;
-      autoLogin.user = "eee";
-    };
-    desktopManager.session = [
-      {
-        name = "xsession";
-        start = ''
-        ${pkgs.runtimeShell} $HOME/.xsession & waitPID=$!
-        '';
-      }
-    ];
-  };
-  
   # Configure keymap in X11
   services.xserver = {
     layout = "br";
