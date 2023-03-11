@@ -3,8 +3,6 @@
 {
   imports = [
     ./packages
-
-    ./cinnamon
     ./awesome
     ./git
     ./kitty

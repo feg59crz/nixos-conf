@@ -14,7 +14,6 @@
     
     # wm
     awesome.enable = false;
-    cinnamon.enable = true;
     # terminal
     kitty.enable = true;
     tmux.enable = true;
