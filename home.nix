@@ -13,7 +13,8 @@
     git.enable = true;
     
     # wm
-    awesome.enable = true;
+    i3.enagle = true
+    awesome.enable = false;
     # terminal
     kitty.enable = true;
     tmux.enable = true;
