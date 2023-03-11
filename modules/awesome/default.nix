@@ -4,12 +4,10 @@
 with lib;
 let cfg = config.modules.awesome;
 
-in {
+in { 
   options.modules.awesome = { enable = mkEnableOption "awesome"; };
   config = mkIf cfg.enable {
-    home.packages = with pkgs; [
-      awesome
-    ];
+    xsession.enable = true;
       
     xsession.windowManager.awesome = {
       enable = true;
