@@ -3,6 +3,8 @@
 {
   imports = [
     ./packages
+
+    ./cinnamon
     ./awesome
     ./git
     ./kitty
@@ -10,5 +12,6 @@
     ./nano
     ./vscode
     ./python
+
   ];
 }
