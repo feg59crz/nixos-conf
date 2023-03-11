@@ -60,7 +60,7 @@ in
     enable = true;
     displayManager = {
       lightdm.enable = true;
-      autoLogin.user = "eee";
+      autoLogin.user = user;
     };
     desktopManager.session = [
       {
@@ -110,8 +110,7 @@ in
     description = user;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      firefox
-    #  thunderbird
+      
     ];
   };
 

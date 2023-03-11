@@ -10,13 +10,17 @@ in {
       home.packages = with pkgs; [
         # cli
         bat fd ripgrep
+
         # gui
-        # obs-studio
-        # obsidian
+        obs-studio
+        obsidian
         qbittorrent
+        firefox
+
         # virtualization 
         # distrobox xorg.xhost
         wget curl
+
         # nano
 	      neofetch
 	      openssh

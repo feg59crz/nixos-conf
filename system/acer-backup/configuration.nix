@@ -14,7 +14,7 @@ let
 in
 {
   imports =
-    [ 
+    [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
@@ -47,23 +47,12 @@ in
   };
 
   # Enable the X11 windowing system.
-  services.xserver = {
-    enable = true;
-    displayManager = {
-      lightdm.enable = true;
-      autoLogin.user = user;
-    };
+  services.xserver.enable = true;
 
-    desktopManager.session = [
-      {
-        name = "xsession"
-        start = ''
-          ${pkgs.runtimeShell} $HOME/.xsession & waitPID=$!
-         '';
-      }
-    ];
-  };
-  
+  # Enable the Cinnamon Desktop Environment.
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = true;
+
   # Configure keymap in X11
   services.xserver = {
     layout = "br";
@@ -97,12 +86,12 @@ in
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.${user} = {
+  users.users.eee = {
     isNormalUser = true;
-    description = user;
+    description = "eee";
     extraGroups = [ "networkmanager" "docker" "wheel" "libvirtd" ];
     packages = with pkgs; [
-    
+      firefox
     ];
   };
 

@@ -10,10 +10,10 @@ in {
       programs.vscode = {
         enable = true;
         extensions = with pkgs; [
-          # vscode-extensions.ms-python.python
-          # vscode-extensions.ms-vscode.cpptools
-          # vscode-extensions.ms-pyright.pyright
-          vscode-extensions.ms-ceintl.vscode-language-pack-pt-br
+          vscode-extensions.ms-python.python
+          vscode-extensions.ms-vscode.cpptools
+          vscode-extensions.ms-pyright.pyright
+          # vscode-extensions.ms-ceintl.vscode-language-pack-pt-br
         ];
       };
     };
