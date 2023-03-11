@@ -19,5 +19,10 @@ in {
         # picom
 	    ];
     # services.picom.enable = true;
+
+    home.file.".config/i3" = {
+      source = ./i3;
+      recursive = true;
+    };
   };
 }
