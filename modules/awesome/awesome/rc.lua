@@ -14,8 +14,19 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
-local lain = require("modules.lain")
-local freedesktop = require("modules.freedesktop")
+
+
+paths = {}
+paths.HOME = os.getenv("HOME")
+paths.awesome = paths.HOME .. "/.config/awesome"
+paths.themes = paths.awesome .. "/themes"
+paths.widgets = paths.awesome .. "/widgets"
+paths.wallpaper = paths.HOME .. "/.dotfiles/wallpaper.jpg"
+
+
+
+
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -47,7 +58,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+
+beautiful.init(paths.themes .. "/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
