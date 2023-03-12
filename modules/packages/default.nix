@@ -22,6 +22,7 @@ in {
         firefox
         qutebrowser
         gnome.nautilus
+        libreoffice-qt
 
         # virtualization 
         # distrobox xorg.xhost
