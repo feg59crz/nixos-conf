@@ -63,7 +63,7 @@ in
 
     desktopManager.session = [
       {
-        name = "xsession"
+        name = "xsession";
         start = ''
           ${pkgs.runtimeShell} $HOME/.xsession & waitPID=$!
          '';
