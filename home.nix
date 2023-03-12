@@ -17,7 +17,7 @@
     };
 
     home.shellAliases = {
-      mp3 = "nvidia-offload yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 "
+      mp3 = "nvidia-offload yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 ";
     };
   };
   imports = [ ./modules/default.nix ];
