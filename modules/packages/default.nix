@@ -10,6 +10,8 @@ in {
       home.packages = with pkgs; [
         # cli
         bat fd ripgrep
+        neofetch
+
         
         # gui
         discord
@@ -23,11 +25,12 @@ in {
 
         # virtualization 
         # distrobox xorg.xhost
-        wget curl
 
-        # nano
-	      neofetch
+        wget curl
 	      openssh
+
+        # games
+        grapejuice
 	    ];
     };
 }

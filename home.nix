@@ -4,6 +4,11 @@
   config = {
     home.stateVersion = "22.11";
     programs.home-manager.enable = true;
+    
+    # Search and append installed fonts
+    fonts.fontconfig.enable = true;
+    
+         
     home.sessionVariables = rec {
       DOT_FILES = "\${HOME}/.dotfiles";
       XDG_CACHE_HOME  = "\${HOME}/.cache";
@@ -17,7 +22,8 @@
     # Packages
     packages.enable = true; 
 
-
+    # fonts
+    fonts.enable = true;
     git.enable = true;
     
     # wm
