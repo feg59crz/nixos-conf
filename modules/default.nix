@@ -5,6 +5,7 @@
     ./i3
     # alacrity
     ./awesome
+    ./bash
     ./fonts
     ./git
     # helix

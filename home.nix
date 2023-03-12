@@ -33,7 +33,8 @@
     kitty.enable = true;
     tmux.enable = false;
     nano.enable = true;
-
+    bash.enable = true;
+    
     python.enable = true;
 
     ## coding
