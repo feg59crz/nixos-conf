@@ -10,12 +10,16 @@ in {
       home.packages = with pkgs; [
         # cli
         bat fd ripgrep
-
+        
         # gui
+        discord
+        glmark2
         obs-studio
         obsidian
         qbittorrent
         firefox
+        qutebrowser
+        gnome.nautilus
 
         # virtualization 
         # distrobox xorg.xhost

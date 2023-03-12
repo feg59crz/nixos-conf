@@ -153,4 +153,16 @@ in
   };
 
   system.stateVersion = "22.11"; # Did you read the comment?
+
+  environment.sessionVariables = rec {
+    XDG_CACHE_HOME  = "\${HOME}/.cache";
+    XDG_CONFIG_HOME = "\${HOME}/.config";
+    XDG_BIN_HOME    = "\${HOME}/.local/bin";
+    XDG_DATA_HOME   = "\${HOME}/.local/share";
+    DOT_FILES = "\${HOME}/.dotfiles";
+    NIXOS_CONFIG = "${DOT_FILES}/system/acer/configuration.nix";
+  };
+  # to nautilus work
+  services.gvfs.enable = true;
+
 }
