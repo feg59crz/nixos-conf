@@ -7,7 +7,6 @@
     
     # Search and append installed fonts
     fonts.fontconfig.enable = true;
-    
          
     home.sessionVariables = rec {
       DOT_FILES = "\${HOME}/.dotfiles";
@@ -15,6 +14,10 @@
       XDG_CONFIG_HOME = "\${HOME}/.config";
       XDG_BIN_HOME    = "\${HOME}/.local/bin";
       XDG_DATA_HOME   = "\${HOME}/.local/share";
+    };
+
+    home.shellAliases = {
+      mp3 = "nvidia-offload yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 "
     };
   };
   imports = [ ./modules/default.nix ];

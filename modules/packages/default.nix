@@ -11,6 +11,7 @@ in {
         # cli
         bat fd ripgrep
         neofetch
+        yt-dlp
 
         
         # gui
