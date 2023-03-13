@@ -13,5 +13,11 @@ in {
     };
     
     programs.kitty.enable = true;
+    home.packages = with pkgs; [
+      kitty-themes #themes
+      pixcat #images
+      termpdfpy #pdf
+
+    ];
   };
 }
