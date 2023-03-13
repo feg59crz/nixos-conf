@@ -108,8 +108,9 @@ in
     isNormalUser = true;
     description = user;
     extraGroups = [ "networkmanager" "docker" "wheel" "libvirtd" ];
+    shell = pkgs.bash;
     packages = with pkgs; [
-    
+        
     ];
   };
 

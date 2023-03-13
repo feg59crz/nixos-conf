@@ -15,8 +15,11 @@
       XDG_BIN_HOME    = "\${HOME}/.local/bin";
       XDG_DATA_HOME   = "\${HOME}/.local/share";
     };
+    
   };
-  imports = [ ./modules/default.nix ];
+  imports = [ 
+    ./modules/default.nix 
+  ];
   config.modules = {
     # Packages
     packages.enable = true; 
@@ -41,6 +44,5 @@
     vscode.enable = true;
   };
 
-  users.users.eee.shell = pkgs.bash;
 }
 
