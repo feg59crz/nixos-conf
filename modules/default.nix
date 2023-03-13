@@ -11,7 +11,7 @@
     # helix
     ./kitty
     ./nano
-    # neovim
+    ./neovim
     ./packages
     ./python
     ./tmux

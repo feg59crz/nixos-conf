@@ -37,7 +37,8 @@
     tmux.enable = false;
     nano.enable = true;
     bash.enable = true;
-    
+    neovim.enable = true;    
+
     python.enable = true;
 
     ## coding
