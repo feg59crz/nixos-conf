@@ -6,7 +6,7 @@ local lua_path = os.getenv("DOT_FILES") .. "/modules/neovim/lua/?.lua"
 
 package.path = package.path .. ";" .. lua_path
 local utils = require("utils")
-require("nvim-tree").setup()
+-- require("nvim-tree").setup()
 
 g.mapleader = ' '
 

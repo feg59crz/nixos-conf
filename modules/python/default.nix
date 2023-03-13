@@ -7,13 +7,13 @@ let
   my-python-packages = with pkgs; python-packages: with python-packages; [
     requests
     flask
-    numpy
-    scipy
-    matplotlib
-    notebook
-    cryptography
-    pip
-    openai
+    # numpy
+    # scipy
+    # matplotlib
+    # notebook
+    # cryptography
+    # pip
+    # openai
     # other python packages you want
   ]; 
   python-with-my-packages = with pkgs; python3.withPackages my-python-packages;
