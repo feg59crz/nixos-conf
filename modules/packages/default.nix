@@ -33,6 +33,7 @@ in {
 
         # games
         grapejuice
+        golly
 	    ];
     };
 }
