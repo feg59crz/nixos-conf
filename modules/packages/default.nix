@@ -12,7 +12,7 @@ in {
         bat fd ripgrep
         neofetch
         yt-dlp
-
+        xclip
         
         # gui
         discord
