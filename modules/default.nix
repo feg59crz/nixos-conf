@@ -14,7 +14,7 @@
     ./neovim
     ./packages
     ./python
-    ./steam
+    # ./steam
     ./tmux
     ./vscode
   ];

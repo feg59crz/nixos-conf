@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
-
+let
+  nixosConfig = pkgs.nixosConfigurations."nixos".config;
+  osprograms = nixosConfig.programs;
+in
 {
   config = {
     home.stateVersion = "22.11";
@@ -46,9 +49,12 @@
 
     vscode.enable = false;
 
-    # Steam
-    steam.enable = true;
+  };
 
+  osprograms.steam = {
+  enable = true;
+  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
 }
