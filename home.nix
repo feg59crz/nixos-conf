@@ -24,11 +24,13 @@
     # Packages
     packages.enable = true; 
 
-    # fonts
+    # Fonts
     fonts.enable = true;
+
+    # Git
     git.enable = true;
     
-    # wm
+    # WM
     i3.enable = false;
     awesome.enable = true;
 
@@ -39,10 +41,14 @@
     bash.enable = true;
     neovim.enable = true;    
 
+    # Python
     python.enable = true;
 
-    ## coding
-    vscode.enable = true;
+    vscode.enable = false;
+
+    # Steam
+    steam.enable = true;
+
   };
 
 }
